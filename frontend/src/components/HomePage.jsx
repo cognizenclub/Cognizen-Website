@@ -296,13 +296,13 @@ const HomePage = () => {
   const mostReadArticles = extraArticles.slice(0, 3); // Just an example
 
   return (
-    loader ? (
-      <div>
-        <div className="flex justify-center items-center h-[90vh]">
-          <div className="w-24 h-24 sm:w-36 sm:h-36 md:w-48 md:h-48 border-4 border-blue-500 dark:border-[#5AA9E6] border-t-transparent border-t-4 border-r-transparent border-r-4 rounded-full animate-spin"></div>
-        </div>
-      </div>
-    ) : (
+    // loader ? (
+    //   <div>
+    //     <div className="flex justify-center items-center h-[90vh]">
+    //       <div className="w-24 h-24 sm:w-36 sm:h-36 md:w-48 md:h-48 border-4 border-blue-500 dark:border-[#5AA9E6] border-t-transparent border-t-4 border-r-transparent border-r-4 rounded-full animate-spin"></div>
+    //     </div>
+    //   </div>
+    // ) : (
       <div className="">
         <Nav />
         <div className="min-h-screen p-4 sm:p-6 md:p-10 flex flex-col items-center py-[10vh] shadow-sm">
@@ -381,7 +381,7 @@ const HomePage = () => {
         <Footer />
       </div>
     )
-  );
+  
   
 
 };
